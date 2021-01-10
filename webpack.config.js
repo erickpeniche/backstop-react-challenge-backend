@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     new ESLintPlugin({
-      extensions: ['js', 'json'],
+      extensions: ['js'],
       fix: true,
     }),
     new NodemonPlugin(),

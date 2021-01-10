@@ -1,9 +1,14 @@
 import { Router } from 'express';
+import { digimons } from '../data';
 
 const router = new Router();
 
 export const getAllDigimons = async (req, res) => {
-  res.json({ test: true });
+  try {
+    return res.json(digimons);
+  } catch (e) {
+    return res.status(500).json({ message: 'Server Error', error: e });
+  }
 };
 
 export const getDigimonById = async () => {
