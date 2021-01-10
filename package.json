@@ -20,6 +20,10 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-webpack-plugin": "^2.4.1",
     "webpack": "^5.12.3",
     "webpack-cli": "^4.3.1"
   }
