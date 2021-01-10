@@ -1,6 +1,6 @@
 import mockData from './digimons.json';
 
-export const getReducedDigimons = (digimons = []) => {
+export const getDigimonsMap = (digimons = []) => {
   if (!digimons || digimons.length === 0) return [];
 
   const digimonMap = new Map();
@@ -8,7 +8,7 @@ export const getReducedDigimons = (digimons = []) => {
   digimons.forEach((digimon) => {
     const { id, ...rest } = digimon;
 
-    digimonMap.set(id, rest);
+    digimonMap.set(id, { id, ...rest });
   });
 
   return digimonMap;
@@ -16,4 +16,4 @@ export const getReducedDigimons = (digimons = []) => {
 
 export const digimons = mockData;
 
-export default getReducedDigimons(mockData);
+export default getDigimonsMap(mockData);
