@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/erickpeniche/backstop-react-challenge-backend/issues"
   },
-  "homepage": "https://github.com/erickpeniche/backstop-react-challenge-backend#readme"
+  "homepage": "https://github.com/erickpeniche/backstop-react-challenge-backend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  }
 }
